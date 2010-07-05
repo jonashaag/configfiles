@@ -1,0 +1,41 @@
+#!/bin/sh
+
+log() {
+    echo $1
+}
+
+stripslash() {
+    echo $1 | tail -c +2
+}
+
+update_files() {
+    for file in `cat tracked-files`; do
+        mkdir -p "`dirname $(stripslash $file)`"
+        log "Updating $file..."
+        cp "$file" "`stripslash $file`"
+    done
+}
+
+restore_files() {
+    backup_dir=backups/backup-`date +%Y-%m-%d-%H-%M-%S`
+    mkdir -p "$backup_dir"
+    for file in `cat tracked-files`; do
+        fname="$backup_dir/`stripslash $file`"
+        log "Backing up $file to $fname..."
+        mkdir -p "`dirname $fname`"
+        cp "$file" "$fname"
+    done
+}
+
+main() {
+    case $1 in
+        update)
+            update_files;;
+        restore)
+            restore_files;;
+        *)
+            echo "unknown action $1"
+            exit 1
+    esac
+}
+main $@
