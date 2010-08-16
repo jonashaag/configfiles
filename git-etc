@@ -25,6 +25,10 @@ restore_files() {
         mkdir -p "`dirname $fname`"
         cp "$file" "$fname"
     done
+    for file in `cat tracked-files`; do
+        log "Restoring$file..."
+        cp "`stripslash $file`" "$file"
+    done
 }
 
 main() {
