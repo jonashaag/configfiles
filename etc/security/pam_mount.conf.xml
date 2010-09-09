@@ -6,14 +6,18 @@
 
 <pam_mount>
 
+		<!-- debug should come before everything else,
+		since this file is still processed in a single pass
+		from top-to-bottom -->
+
+<debug enable="0" />
 
 		<!-- Volume definitions -->
 
-<volume user="jonas" fstype="crypt" path="/dev/sda1" mountpoint="/home/jonas" options="fsck,relatime" />
+<volume user="jonas" fstype="crypt" path="/dev/sda1" mountpoint="/jonas" options="relatime,ssd_spread" />
 
 		<!-- pam_mount parameters: General tunables -->
 
-<debug enable="0" />
 <!--
 <luserconf name=".pam_mount.conf.xml" />
 -->
@@ -28,7 +32,6 @@
 <mntoptions deny="*" />
 -->
 <mntoptions require="nosuid,nodev" />
-<path>/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin</path>
 
 <logout wait="0" hup="0" term="0" kill="0" />
 

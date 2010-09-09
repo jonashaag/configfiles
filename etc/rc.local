@@ -2,6 +2,4 @@
 #
 # /etc/rc.local: Local multi-user startup script.
 #
-export DISPLAY=:0
 export PYTHONPATH=/home/jonas/.syspath:$PYTHONPATH
-amixer -q set Front unmute
