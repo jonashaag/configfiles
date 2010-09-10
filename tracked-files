@@ -9,7 +9,9 @@
 /etc/laptop-mode/conf.d/configuration-file-control.conf
 /etc/laptop-mode/conf.d/lcd-brightness.conf
 /etc/laptop-mode/conf.d/usb-autosuspend.conf
-/etc/laptop-mode/conf.d/video-out.conf
+/etc/laptop-mode/conf.d/bluetooth.conf
+/etc/laptop-mode/conf.d/intel-hda-powersave.conf
+/etc/laptop-mode/conf.d/wireless-power.conf
 /etc/makepkg.conf
 /etc/pacman.d/mirrorlist
 /etc/pam.d/login
