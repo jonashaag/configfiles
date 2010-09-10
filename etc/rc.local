@@ -3,3 +3,4 @@
 # /etc/rc.local: Local multi-user startup script.
 #
 export PYTHONPATH=/home/jonas/.syspath:$PYTHONPATH
+chmod 777 /sys/class/backlight/acpi_video0/brightness
