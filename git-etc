@@ -29,6 +29,11 @@ restore_files() {
         log "Restoring$file..."
         cp "`stripslash $file`" "$file"
     done
+
+    echo '---------------------------------------'
+    echo ' ' Remember to set the right architecture \
+         in pacman.d/mirrorlist and makepkg.conf
+    echo '---------------------------------------'
 }
 
 main() {
