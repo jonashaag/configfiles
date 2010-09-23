@@ -18,3 +18,4 @@
 /etc/pam.d/login
 /etc/pam.d/passwd
 /etc/security/pam_mount.conf.xml
+/etc/fstab
