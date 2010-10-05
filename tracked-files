@@ -14,7 +14,6 @@
 /etc/laptop-mode/conf.d/intel-sata-powermgmt.conf
 /etc/laptop-mode/conf.d/wireless-power.conf
 /etc/makepkg.conf
-/etc/pacman.d/mirrorlist
 /etc/pam.d/login
 /etc/pam.d/passwd
 /etc/security/pam_mount.conf.xml
