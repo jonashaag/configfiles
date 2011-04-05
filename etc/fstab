@@ -6,7 +6,7 @@ devpts                 /dev/pts      devpts    defaults            0      0
 shm                    /dev/shm      tmpfs     nodev,nosuid        0      0
 
 # DEVICE DETAILS: /dev/sda2 UUID=87ec01e3-7e93-44e0-8722-7d8033eb5ec7 LABEL=root
-LABEL=root / ext4 defaults 0 1
+LABEL=root             /             ext4      defaults,noatime   0      1
 
 tmpfs                  /tmp          tmpfs     defaults,noatime,mode=1777 0 0
 tmpfs                  /var/log      tmpfs     defaults,noatime,mode=1777,size=4M 0 0

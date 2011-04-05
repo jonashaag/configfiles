@@ -2,8 +2,6 @@
 /etc/rc.local
 /etc/pacman.conf
 /etc/clyde.conf
-/etc/dbus-1/system.d/cnetworkmanager.conf
-/etc/dbus-1/system.d/nm-applet.conf
 /etc/laptop-mode/laptop-mode.conf
 /etc/laptop-mode/conf.d/auto-hibernate.conf
 /etc/laptop-mode/conf.d/configuration-file-control.conf

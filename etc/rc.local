@@ -6,4 +6,4 @@ export PYTHONPATH=/home/jonas/.syspath:$PYTHONPATH
 chmod 777 /sys/class/backlight/acpi_video0/brightness
 amixer -q set Master 100%
 amixer -q set PCM 25%
-hdparm -A0 /dev/sda
+export http_proxy=localhost:8118
