@@ -14,7 +14,7 @@
 
 		<!-- Volume definitions -->
 
-<volume user="jonas" fstype="crypt" path="/dev/sda1" mountpoint="/jonas" options="fsck,noatime" />
+<volume user="jonas" fstype="crypt" path="/dev/sda2" mountpoint="/jonas" options="fsck,noatime" />
 
 		<!-- pam_mount parameters: General tunables -->
 
