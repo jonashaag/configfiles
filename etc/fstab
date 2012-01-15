@@ -1,0 +1,10 @@
+# <file system>        <dir>         <type>    <options>          <dump> <pass>
+devpts                 /dev/pts      devpts    defaults            0      0
+shm                    /dev/shm      tmpfs     nodev,nosuid        0      0
+tmpfs                  /tmp          tmpfs     defaults,noatime,mode=1777 0 0
+tmpfs                  /var/log      tmpfs     defaults,noatime,mode=1777,size=10M 0 0
+tmpfs                  /var/run      tmpfs     defaults,noatime,mode=1777,size=1M 0 0
+tmpfs                  /var/tmp      tmpfs     defaults,noatime,mode=1777,size=1M 0 0
+
+# DEVICE DETAILS: /dev/sda2 UUID=ddc1751b-4564-4ee9-a703-5de3f7331529 LABEL=root
+/dev/sda3 / ext4 defaults 0 1
